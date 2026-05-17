@@ -11,10 +11,11 @@
     --surface-alt: #e8e3d8;
     --muted: #718096;
     --accent: #8b4513;
-    --nav-bg: rgba(20, 20, 20, 0.95);
+    --nav-bg: rgba(52, 0, 0, 0.95);
     --nav-text: #ffffff;
     --hero-overlay: rgba(0, 0, 0, 0.6);
     --button-text: #ffffff;
+    
 }
 
 body {
@@ -32,7 +33,7 @@ body.dark-mode {
     --surface-alt: #1f2731;
     --muted: #9ca3af;
     --accent: #d4af37;
-    --nav-bg: rgba(10, 10, 12, 0.98);
+    --nav-bg: rgba(52, 0, 0, 0.95);
     --nav-text: #f8f8ff;
     --hero-overlay: rgba(0, 0, 0, 0.7);
     --button-text: #111111;
@@ -152,7 +153,7 @@ nav ul li a:hover::after {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 25px ;
 }
 
 .nav-links.open {
@@ -169,14 +170,15 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 25px;
-    margin-left: auto; /* This pushes the links to the far right side */
+    margin-left: auto; 
+    font-size: 0.9rem;
 }
 
 .nav-actions {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-left: 20px; /* This creates a clean gap between the links and the button */
+    margin-left: 20px; 
 }
 
 /* Hero */
@@ -203,14 +205,16 @@ nav ul {
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
+    line-height: 1.2;
     font-family: 'Playfair Display', serif;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 30px;
+
 }
 
 .btn {
