@@ -543,7 +543,7 @@ footer {
 
 /* Unique background images for each immersion page */
 .subpage-hero-community {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/image 41.JPG');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/image 41.jpg');
     background-size: 100% auto;
     background-position: center 20%;
     background-repeat: no-repeat;
