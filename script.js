@@ -39,7 +39,7 @@ document.querySelectorAll('.gallery[data-gallery-source]').forEach(gallery => {
 
         gallery.innerHTML = images.map((image, index) => `
             <div class="gallery-item" data-gallery="${index}">
-                <img src="${image.src}" alt="${image.alt}" class="gallery-thumbnail">
+                <img src="${image.src}" alt="${image.alt}" class="gallery-thumbnail" loading="lazy" decoding="async">
                 <p class="gallery-caption">${image.alt}</p>
             </div>
         `).join('');
