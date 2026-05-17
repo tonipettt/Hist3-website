@@ -69,6 +69,15 @@ nav {
     font-weight: 600;
 }
 
+a:has(.logo) {
+    text-decoration: none !important;
+    color: inherit; 
+}
+
+a:has(.logo) .logo {
+    text-decoration: none;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -150,6 +159,25 @@ nav ul li a:hover::after {
     transform: translateX(0);
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin-left: auto; /* This pushes the links to the far right side */
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 20px; /* This creates a clean gap between the links and the button */
+}
 
 /* Hero */
 .hero {
