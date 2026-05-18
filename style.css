@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar{
     border-bottom: 2.5px solid beige;
 }
@@ -259,6 +264,7 @@ nav ul {
 .section {
     padding: 70px 10%;
     background-color: beige;
+    scroll-margin-top: 90px;
 }
 
 .dark-mode .section{
@@ -287,22 +293,20 @@ nav ul {
 .content-box {
     background: var(--surface);
     padding: 3.5rem;
-    border-radius: 12px;
+    border-radius: 18px;
     box-shadow: 0 5px 20px black;
 }
 .content-box p:first-of-type {
-    font-size: 1.4rem;
-    font-weight: 2;
+    font-size: inherit;
     color: black;
-    font-weight: 500;
+    font-weight: inherit;
     margin-bottom: 2rem;
 }
 
 .dark-mode .content-box p:first-of-type {
-    font-size: 1.4rem;
-    font-weight: 2;
+    font-size: inherit;
     color: white;
-    font-weight: 500;
+    font-weight: inherit;
     margin-bottom: 2rem;
 }
 
@@ -352,7 +356,7 @@ nav ul {
 .dark-mode .content-box {
     background: var(--surface);
     padding: 3.5rem;
-    border-radius: 12px;
+    border-radius: 18px;
     box-shadow: 0 5px 20px rgba(242, 241, 241, 0.99);
 }
 
@@ -371,7 +375,7 @@ nav ul {
 .reflection-content-box {
     background: var(--surface);
     padding: 3.5rem;
-    border-radius: 12px;
+    border-radius: 18px;
     box-shadow: 0 5px 20px black;
     transition: transform 0.25s ease, opacity 0.25s ease;
 }
@@ -379,7 +383,7 @@ nav ul {
 .dark-mode .reflection-content-box {
     background: var(--surface);
     padding: 3.5rem;
-    border-radius: 12px;
+    border-radius: 18px;
     box-shadow: 0 5px 20px white;
     transition: transform 0.25s ease, opacity 0.25s ease;
 }
@@ -653,7 +657,7 @@ footer {
 .immersion-link-card {
     background: var(--surface);
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 18px;
     text-decoration: none;
     color: var(--text);
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
