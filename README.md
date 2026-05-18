@@ -49,32 +49,35 @@ The HIST 3 Immersion project investigates how culture, power, identity, and hist
 ```
 hist3-immersion-site/
 ├── index.html              # Homepage
+├── introduction.html       # Project introduction
+├── immersion.html          # Immersion section hub
 ├── community.html          # Community & Everyday Life immersion
-├── labor.html             # Labor & Economic Life immersion
-├── culture.html           # Culture & Identity immersion
-├── landscape.html         # Landscapes & Historical Memory immersion
-├── mobility.html          # Mobility & Movement immersion
-├── reflection.html        # Analytical Reflection
-├── sources.html           # Sources & References
-├── style.css              # Main stylesheet
-├── script.js              # Interactive functionality
-├── images/                # Project image assets
-├── videos/                # Video content
-├── html/                  # Additional HTML resources
-└── README.md              # This file
+├── labor.html              # Labor & Economic Life immersion
+├── culture.html            # Culture & Identity immersion
+├── landscape.html          # Landscapes & Historical Memory immersion
+├── mobility.html           # Mobility & Movement immersion
+├── reflection.html         # Analytical Reflection
+├── sources.html            # Sources & References
+├── style.css               # Main stylesheet
+├── script.js               # Interactive functionality
+├── images/                 # Project image assets
+├── videos/                 # Video content
+├── html/                   # Additional HTML resources
+└── README.md               # This file
 ```
 
 ---
 
 ## Navigation Structure
 
-### Main Homepage Sections
+### Main Navigation Pages
 1. **Home** - Hero section with project introduction
 2. **Introduction** - Overview of the project approach
-3. **Immersions** - Six curated immersion experiences
-4. **About Us** - Project mission and values
-5. **Reflection** - Analytical reflection on findings
-6. **Sources** - Citations and references
+3. **Immersions** - Curated immersion experience hub
+4. **Reflection** - Analytical reflection on findings
+5. **Sources** - Citations and references
+
+The homepage **Explore the Project** button links directly to `immersion.html#immersions`, bringing users to the immersion experience cards.
 
 ### Immersion Experiences
 - **Community and Everyday Life** - Exploring routines, interaction, and lived experiences
@@ -116,7 +119,7 @@ To add new immersion experiences:
 1. Create a new HTML file following the template pattern
 2. Add navigation link in relevant pages
 3. Create corresponding CSS class for background styling
-4. Update the immersion links grid on homepage
+4. Update the immersion links grid in `immersion.html`
 
 ---
 
