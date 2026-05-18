@@ -1,6 +1,7 @@
 // Fade-in animation when scrolling
 
-const sections = document.querySelectorAll('.immersion-card, .content-box');
+const sections = document.querySelectorAll('.immersion-card, .content-box, .reflection-content-box');
+
 
 window.addEventListener('scroll', () => {
 
@@ -26,6 +27,7 @@ sections.forEach(section => {
     section.style.transform = 'translateY(40px)';
     section.style.transition = 'all 0.8s ease';
 });
+
 
 // Gallery lightbox functionality
 document.querySelectorAll('.gallery[data-gallery-source]').forEach(gallery => {
