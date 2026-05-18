@@ -320,8 +320,32 @@ nav ul {
     box-shadow: none;
 }
 
-.immersion-link-card{
+.reflection-content-box {
+    background: var(--surface);
+    padding: 3.5rem;
+    border-radius: 12px;
     box-shadow: 0 5px 20px black;
+    transition: 0.3s, ease;
+}
+
+.dark-mode .reflection-content-box {
+    background: var(--surface);
+    padding: 3.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px white;
+    transition: 0.3s, ease;
+}
+
+.reflection-content-box h2{
+    margin-bottom: 10px;
+}
+
+.reflection-content-box p {
+    margin-bottom: 25px;
+}
+
+.immersion-link-card{
+    box-shadow: 0 3px 10px black;
 }
 
 .dark-mode .immersion-link-card{
