@@ -11,7 +11,7 @@
     --surface-alt: #e8e3d8;
     --muted: #718096;
     --accent: #8b4513;
-    --nav-bg: rgba(52, 0, 0, 0.95);
+    --nav-bg: rgba(52, 0, 0, 2);
     --nav-text: #ffffff;
     --hero-overlay: rgba(0, 0, 0, 0.6);
     --button-text: #ffffff;
@@ -230,19 +230,19 @@ nav ul {
 .btn {
     display: inline-block;
     background: linear-gradient(135deg, #c35100, #8b0000);
-    color: black;
+    color: rgb(250, 250, 250);
     padding: 14px 32px;
     border-radius: 12px;
     border-color: white;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s, ease;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 8px rgb(255, 255, 255);
 }
 
 .btn:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
 .dark-mode .btn{
@@ -265,7 +265,8 @@ nav ul {
 
 .section-title {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     color: black;
 }
 
@@ -304,8 +305,8 @@ nav ul {
 
 .dark-mode .content-box {
     background: var(--surface);
-    padding: 40px;
-    border-radius: 10px;
+    padding: 3.5rem;
+    border-radius: 12px;
     box-shadow: 0 5px 20px rgba(242, 241, 241, 0.99);
 }
 
@@ -325,7 +326,7 @@ nav ul {
     padding: 3.5rem;
     border-radius: 12px;
     box-shadow: 0 5px 20px black;
-    transition: 0.3s, ease;
+    transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 .dark-mode .reflection-content-box {
@@ -333,7 +334,7 @@ nav ul {
     padding: 3.5rem;
     border-radius: 12px;
     box-shadow: 0 5px 20px white;
-    transition: 0.3s, ease;
+    transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 .reflection-content-box h2{
@@ -699,6 +700,7 @@ footer {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/optimized/image 52.jpg');
     background-size: cover;
     background-position: center;
+    margin-top: 60px;
 }
 
 .alt-section {
