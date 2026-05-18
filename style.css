@@ -199,6 +199,15 @@ nav ul {
     padding: 20px;
 }
 
+.hero-image-section {
+    /* Existing background styles */
+    background-image: url('your-group-photo.jpg');
+    background-attachment: fixed; /* This is the key line! */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .hero-content {
     max-width: 850px;
     color: white;
@@ -206,7 +215,7 @@ nav ul {
 
 .hero h1 {
     font-size: 4rem;#c
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     line-height: 1.1;
     font-family: 'Playfair Display', serif;
 }
@@ -241,15 +250,17 @@ nav ul {
     color: white;
     border-color: white;
 }
+
+
 /* Sections */
 .section {
-    padding: 100px 10%;
-    background-color: rgb(249, 226, 179);
+    padding: 70px 10%;
+    background-color: beige;
 }
 
 .dark-mode .section{
     padding: 100px 10%;
-    background-color: #141414;
+    background-color: rgba(6, 6, 6, 0.95);
 }
 
 .section-title {
@@ -271,9 +282,24 @@ nav ul {
 
 .content-box {
     background: var(--surface);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    padding: 3.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px black;
+}
+.content-box p:first-of-type {
+    font-size: 1.4rem;
+    font-weight: 2;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.dark-mode .content-box p:first-of-type {
+    font-size: 1.4rem;
+    font-weight: 2;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 2rem;
 }
 
 .dark-mode .content-box {
@@ -287,6 +313,20 @@ nav ul {
     margin-bottom: 20px;
 }
 
+.content-box-alternative {
+    background: transparent; /* Remove the white block entirely */
+    border-left: 4px solid #4a0000; /* Beautiful maroon accent line */
+    padding-left: 2.5rem;
+    box-shadow: none;
+}
+
+.immersion-link-card{
+    box-shadow: 0 5px 20px black;
+}
+
+.dark-mode .immersion-link-card{
+    box-shadow: 0 3px 10px white;
+}
 
 /* Immersion Cards */
 .immersion-card {
@@ -297,7 +337,6 @@ nav ul {
     background: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
 
 .reverse {
