@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.navbar{
+    border-bottom: 2.5px solid beige;
+}
 
 :root {
     --bg: #f9f7f2;
@@ -11,7 +14,7 @@
     --surface-alt: #e8e3d8;
     --muted: #718096;
     --accent: #8b4513;
-    --nav-bg: rgba(52, 0, 0, 0.95);
+    --nav-bg: rgba(52, 0, 0, 2);
     --nav-text: #ffffff;
     --hero-overlay: rgba(0, 0, 0, 0.6);
     --button-text: #ffffff;
@@ -33,7 +36,7 @@ body.dark-mode {
     --surface-alt: #1f2731;
     --muted: #9ca3af;
     --accent: #d4af37;
-    --nav-bg: rgba(52, 0, 0, 0.95);
+    --nav-bg: rgba(52, 0, 0, 1);
     --nav-text: #f8f8ff;
     --hero-overlay: rgba(0, 0, 0, 0.7);
     --button-text: #111111;
@@ -199,6 +202,15 @@ nav ul {
     padding: 20px;
 }
 
+.hero-image-section {
+    /* Existing background styles */
+    background-image: url('your-group-photo.jpg');
+    background-attachment: fixed; /* This is the key line! */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .hero-content {
     max-width: 850px;
     color: white;
@@ -206,7 +218,7 @@ nav ul {
 
 .hero h1 {
     font-size: 4rem;#c
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     line-height: 1.1;
     font-family: 'Playfair Display', serif;
 }
@@ -221,19 +233,19 @@ nav ul {
 .btn {
     display: inline-block;
     background: linear-gradient(135deg, #c35100, #8b0000);
-    color: black;
+    color: rgb(250, 250, 250);
     padding: 14px 32px;
     border-radius: 12px;
     border-color: white;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s, ease;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 8px rgb(255, 255, 255);
 }
 
 .btn:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
 .dark-mode .btn{
@@ -241,20 +253,23 @@ nav ul {
     color: white;
     border-color: white;
 }
+
+
 /* Sections */
 .section {
-    padding: 100px 10%;
-    background-color: rgb(249, 226, 179);
+    padding: 70px 10%;
+    background-color: beige;
 }
 
 .dark-mode .section{
     padding: 100px 10%;
-    background-color: #141414;
+    background-color: rgba(6, 6, 6, 0.95);
 }
 
 .section-title {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     color: black;
 }
 
@@ -271,15 +286,73 @@ nav ul {
 
 .content-box {
     background: var(--surface);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    padding: 3.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px black;
+}
+.content-box p:first-of-type {
+    font-size: 1.4rem;
+    font-weight: 2;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.dark-mode .content-box p:first-of-type {
+    font-size: 1.4rem;
+    font-weight: 2;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+/*Communities of Kayapa Valley*/
+.subsection {
+    display: flex;
+    align-items: center;  
+    gap: 20px;            
+    width: 100%;
+}
+
+.subsection::after{
+    content: '';
+    flex-grow: 1;         
+    height: 4px;          
+    background-color: #020000; 
+}
+
+.dark-mode .subsection::after{
+    content: '';
+    flex-grow: 1;         
+    height: 4px;          
+    background-color: #fefefe; 
+}
+
+.subsection2{
+    display: flex;
+    align-items: center;  
+    gap: 20px;            
+    width: 100%;
+    margin-top: 30px;
+}
+
+.subsection2::after{
+    content: '';
+    flex-grow: 1;         
+    height: 2.5px;          
+    background-color: #020000; 
+}
+.dark-mode .subsection2::after{
+    content: '';
+    flex-grow: 1;         
+    height: 2.5px;          
+    background-color: #ffffff; 
 }
 
 .dark-mode .content-box {
     background: var(--surface);
-    padding: 40px;
-    border-radius: 10px;
+    padding: 3.5rem;
+    border-radius: 12px;
     box-shadow: 0 5px 20px rgba(242, 241, 241, 0.99);
 }
 
@@ -287,6 +360,45 @@ nav ul {
     margin-bottom: 20px;
 }
 
+.content-box-alternative {
+    background: transparent; /* Remove the white block entirely */
+    border-left: 4px solid #4a0000; /* Beautiful maroon accent line */
+    padding-left: 2.5rem;
+    box-shadow: none;
+}
+
+/*Reflection content box*/
+.reflection-content-box {
+    background: var(--surface);
+    padding: 3.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px black;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.dark-mode .reflection-content-box {
+    background: var(--surface);
+    padding: 3.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px white;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.reflection-content-box h2{
+    margin-bottom: 10px;
+}
+
+.reflection-content-box p {
+    margin-bottom: 25px;
+}
+
+.immersion-link-card{
+    box-shadow: 0 3px 10px black;
+}
+
+.dark-mode .immersion-link-card{
+    box-shadow: 0 3px 10px white;
+}
 
 /* Immersion Cards */
 .immersion-card {
@@ -297,7 +409,6 @@ nav ul {
     background: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
 
 .reverse {
@@ -636,6 +747,7 @@ footer {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/optimized/image 52.jpg');
     background-size: cover;
     background-position: center;
+    margin-top: 60px;
 }
 
 .alt-section {
