@@ -311,6 +311,47 @@ nav ul {
     margin-bottom: 2rem;
 }
 
+/* Map*/
+
+.project-map {
+  width: 100%;
+  max-width: 1000px;      
+  height: 400px;         
+  border-radius: 8px;    
+  box-shadow: 0 10px 30px black; 
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  border-radius: 8px; 
+  border-color: black;   
+}
+
+.dark-mode .project-map {
+  width: 100%;
+  max-width: 1000px;      
+  height: 400px;         
+  border-radius: 8px;    
+  box-shadow: 0 10px 30px white; 
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  border-radius: 8px; 
+  border-color: white;
+}
+
+.subsection-intro {
+    display: block;
+    align-items: center;  
+    gap: 20px;            
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    margin-top: 50px;
+    text-align: center;
+}
+
 /*Communities of Kayapa Valley*/
 .subsection {
     display: flex;
